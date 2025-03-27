@@ -1,0 +1,10 @@
+.App-Row{
+    text-align: center;
+    display: flex;
+    border: 5px;
+}
+.App-Box{
+    border: 5px;
+    text-align: center;
+    margin: 20px;
+}

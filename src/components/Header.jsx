@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom';
 import './Header.css'
 export default function Header(){
     return (
         <div className="App-Header-Row">
-            <div>My react Store</div>
-            <div>Menu</div>
-            <div>Contact</div>
+            <h1>My react app</h1>
+            <div>
+                <Link to="Register">Register</Link>
+                <Link to="products">Home</Link>
+                <Link to="Login">Login</Link>
+            </div>
         </div>
     );
 }
