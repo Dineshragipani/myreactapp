@@ -1,12 +1,14 @@
 import React from "react";
-import Main from "Main";
-export default function App12(){
-    return (
-        <div>
-            <h2>this is App12</h2>
-            <button>a</button>
-            <button>b</button>
-            <Main c={b} />
-        </div>
-    )
+import Main from "./Main";
+import { useState } from "react";
+export default function App12() {
+const [page,setPage] = useState("a")
+  return (
+    <div>
+      <h3>This is App12</h3>
+      <button onClick={()=>setPage("a")}>a</button>
+      <button onClick={()=>setPage("b")}>b</button>
+      <Main c={page}/>
+    </div>
+  );
 }
